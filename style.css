@@ -1,0 +1,47 @@
+body {
+    background-image: url(assets/webgifs/images/starry.png);
+}
+.constrow {
+    display: flex;
+    padding: 12px;
+    flex: 34.59%;
+    justify-content: center;
+    align-content: center;
+}
+.window,
+#main .title-bar {
+    background: linear-gradient(90deg, #0000ff, #ff003c);
+    align-content: center;
+}
+.window,
+#main {
+    width: 99%;
+    height: max-content;
+    padding: 2px;
+}
+.window {
+    margin: 8px;
+}
+.window,
+#vertmenu {
+    width: fit-content;
+    height: fit-content;
+}
+.vertmenu {
+    display: block;
+    padding: 8px 7px 7px 7px;
+    width: 144px;
+    height: fit-content;
+    text-decoration: none;
+    margin: fit-content;
+}
+#vertmenu button {
+    padding: 12px;
+    margin: 3px;
+}
+.container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    padding: 5px;
+    height: 100vh;
+}
