@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Dino's Tile Canvas Calculator</title>
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Dino's Tile Canvas Calculator (DTCC)</h1>
+            <div class="calcbox">
+                <p>Info: Height and Width represent how many cells your tile makes up. Each cell is equal to 20px.</p>
+                Height: <input type="text" id="H" oninput="heightCalc()" /><br />
+                Width: <input type="text" id="W" oninput="widthCalc()" /><br />
+                <p>
+                    note: this automatically assumes you are using all sublayers of your selected layer amount
+                    below.<input type="image" src="assets/webgifs/images/1717box.png" onclick="secret()" />
+                    <!--its my website. i can do whatever I want.-->
+                </p>
+                <p>
+                    rnd represents how many variations of your tile there are. these are randomly selected and are based
+                    off of the room's seed.
+                </p>
+                rnd: <input type="text" id="rnd" oninput="rndCalc()" />
+                <p id="rndzero" style="display: none">rnd cannot be zero!!</p>
+                <br />
+                <p>
+                    bftiles are "Buffer" tiles. these cells are not considered part of the tile's geometry, but rather
+                    act as extra drawing space.
+                </p>
+                bftiles: <input type="text" id="bf" oninput="bfCalc()" />
+                <br />
+                <p>
+                    Rain World works on layers. each layer consists of 10 sublayers. This provides the game with its 3D
+                    effect. Larger Tiles can utilise multiple layers for greater depth.
+                </p>
+                <div class="layerbox">
+                    <button id="Layer1" onclick="layerMath()">1</button>
+                    <button id="Layer2" onclick="layerMath()">2</button><br />
+                    <p id="display">layer</p>
+                </div>
+            </div>
+            <button id="canvas" onclick="calc()">Canvas Size</button>
+            <div id="answer" style="display: none">
+                <p><span id="sumdisplayH"></span>px by <span id="sumdisplayW"></span>px</p>
+                <p>Preview size: <span id="pdh"></span>px by <span id="pdw"></span>px</p>
+                <p>
+                    note: preview size doesn't affect your canvas size! this is just the size of the tile's preview
+                    doodle.
+                </p>
+                <!--someone remind me to add photos of each process when i am sane enough-->
+                <!--and also a button to toggle these notes between the input boxes-->
+            </div>
+            <!--AngryDino42 was here-->
+            <div id="secretimage" style="display: none">
+                <img src="assets/webgifs/images/fandom/killharley.png" style="width: 20%" />
+            </div>
+        </div>
+    </body>
+</html>
