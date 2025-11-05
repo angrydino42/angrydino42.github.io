@@ -24,7 +24,7 @@ var rnd = (document.getElementById("rnd").defaultValue = 1);
 function rndCalc() {
     rnd = document.getElementById("rnd").value;
     //console.log(rnd);
-    if (rnd === "0") {
+    if (rnd === "0" || rnd === "") {
         document.getElementById("rndzero").style.display = "block";
     } else {
         document.getElementById("rndzero").style.display = "none";
@@ -95,3 +95,34 @@ function secret() {
         document.getElementById("secretimage").style.display = "none";
     }
 }
+//goddamnit markus youre seriously making me spend another 12 hours on this bs
+var mlayer = (document.getElementById("manuallayer").defaultValue = 1);
+function manual() {
+    document.getElementById("manualLayerBox").style.display = "block";
+}
+function mlcalc() {
+    mlayer = document.getElementById("manuallayer").value;
+    layer = mlayer;
+    display.textContent = layer;
+    if (layer === "0" || layer === "") {
+        document.getElementById("mlzero").style.display = "block";
+    } else {
+        document.getElementById("mlzero").style.display = "none";
+    }
+}
+function reset() {
+    layer = "1";
+    display.textContent = layer;
+}
+
+var notes = document.getElementsByClassName("note");
+function ntoggle() {
+    for (var i = 0; i < notes.length; i++) {
+        if (notes[i].style.display == "block") {
+            notes[i].style.display = "none";
+        } else {
+            notes[i].style.display = "block";
+        }
+    }
+}
+//there's a lot of functions here. i am sure there is a more efficient way of doing this. but who cares. it works.

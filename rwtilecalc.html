@@ -9,48 +9,61 @@
         <div class="container">
             <h1>Dino's Tile Canvas Calculator (DTCC)</h1>
             <button id="home" onclick="window.location.href='index.html'">Home</button>
+            <button id="noteToggle" onclick="ntoggle()">Toggle Notes</button>
+            <input type="image" src="assets/webgifs/images/1717box.png" onclick="secret()" />
             <div class="calcbox">
-                <p>Info: Height and Width represent how many cells your tile makes up. Each cell is equal to 20px.</p>
-                Height: <input type="text" id="H" oninput="heightCalc()" /><br />
-                Width: <input type="text" id="W" oninput="widthCalc()" /><br />
-                <p>
-                    note: this automatically assumes you are using all sublayers of your selected layer amount
-                    below.<input type="image" src="assets/webgifs/images/1717box.png" onclick="secret()" />
-                    <!--its my website. i can do whatever I want.-->
+                <p class="note" style="display: block">
+                    Info: Height and Width represent how many cells your tile makes up. Each cell is equal to 20px.
                 </p>
-                <p>
+                <div id="basics" style="padding: 4.5px">
+                    Height: <input type="text" id="H" oninput="heightCalc()" size="1" /><br />
+                    Width: <input type="text" id="W" oninput="widthCalc()" size="1" /><br />
+                </div>
+                <!--its my website. i can do whatever I want.-->
+                <p class="note" style="display: block">
                     rnd represents how many variations of your tile there are. these are randomly selected and are based
                     off of the room's seed.
                 </p>
-                rnd: <input type="text" id="rnd" oninput="rndCalc()" />
+                <label style="padding: 4.5px">rnd: <input type="text" id="rnd" oninput="rndCalc()" size="1" /></label>
                 <p id="rndzero" style="display: none">rnd cannot be zero!!</p>
                 <br />
-                <p>
+                <p class="note" style="display: block">
                     bftiles are "Buffer" tiles. these cells are not considered part of the tile's geometry, but rather
                     act as extra drawing space.
                 </p>
-                bftiles: <input type="text" id="bf" oninput="bfCalc()" />
+                <label style="padding: 4.5px">
+                    bftiles: <input type="text" id="bf" oninput="bfCalc()" size="1"
+                /></label>
                 <br />
-                <p>
+                <p class="note" style="display: block">
                     Rain World works on layers. each layer consists of 10 sublayers. This provides the game with its 3D
                     effect. Larger Tiles can utilise multiple layers for greater depth.
                 </p>
-                <div class="layerbox">
+                <div class="layerbox" style="padding: 4.5px">
                     <button id="Layer1" onclick="layerMath()">1</button>
-                    <button id="Layer2" onclick="layerMath()">2</button><br />
+                    <button id="Layer2" onclick="layerMath()">2</button>
+                    <button id="manual" onclick="manual()">Manual</button><br />
                     <p id="display">layer</p>
+                    <!--markus i am going to kill you with hammers-->
+                    <div id="manualLayerBox" style="display: none">
+                        <label
+                            >Manual sublayer selection:
+                            <input type="text" id="manuallayer" oninput="mlcalc()" size="1" />
+                        </label>
+                        <button id="mlreset" onclick="reset()">Reset to 1</button>
+                    </div>
+                    <p id="mlzero" style="display: none">Cannot be zero!</p>
                 </div>
             </div>
             <button id="canvas" onclick="calc()">Canvas Size</button>
             <div id="answer" style="display: none">
                 <p><span id="sumdisplayH"></span>px by <span id="sumdisplayW"></span>px</p>
                 <p>Preview size: <span id="pdh"></span>px by <span id="pdw"></span>px</p>
-                <p>
+                <p class="note" style="display: block">
                     note: preview size doesn't affect your canvas size! this is just the size of the tile's preview
                     doodle.
                 </p>
                 <!--someone remind me to add photos of each process when i am sane enough-->
-                <!--and also a button to toggle these notes between the input boxes-->
             </div>
             <!--AngryDino42 was here-->
             <div id="secretimage" style="display: none">
