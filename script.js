@@ -64,7 +64,7 @@ Layer2.addEventListener("click", () => {
     layerMath();
 });
 //theres probably a more efficient way to do this. i know nothing about JS though
-
+const effcol = document.getElementById("effcol");
 const sumHD = document.getElementById("sumdisplayH");
 const sumWD = document.getElementById("sumdisplayW");
 const wpd = document.getElementById("pdw");
@@ -116,8 +116,10 @@ function reset() {
 }
 
 var notes = document.getElementsByClassName("note");
+var noteimg = document.getElementsByClassName("noteimg");
 function ntoggle() {
     for (var i = 0; i < notes.length; i++) {
+        //essentially, everything with the "note" class is toggled by the "Toggle Notes" button.
         if (notes[i].style.display == "block") {
             notes[i].style.display = "none";
         } else {
@@ -125,4 +127,31 @@ function ntoggle() {
         }
     }
 }
+function nItoggle() {
+    for (var o = 0; o < noteimg.length; o++) {
+        //essentially, everything with the "noteimg" class is toggled by the "Toggle Notes" and "Only Toggle Images" buttons.
+        if (noteimg[o].style.display == "block") {
+            noteimg[o].style.display = "none";
+        } else {
+            noteimg[o].style.display = "block";
+        }
+    }
+}
 //there's a lot of functions here. i am sure there is a more efficient way of doing this. but who cares. it works.
+function markussecret() {
+    if (document.getElementById("secrettext").style.display == "none") {
+        document.getElementById("secrettext").style.display = "block";
+    } else if (document.getElementById("secrettext").style.display == "block") {
+        document.getElementById("secrettext").style.display = "none";
+    }
+}
+
+effcol.addEventListener("change", function effcolCalc() {
+    if (this.checked) {
+        rnd = rnd * 2;
+        //effect colour is basically the same as rnd but it also applies to rnd on calculation
+    } else {
+        rnd = document.getElementById("rnd").value;
+        //if this isn't specified then the rnd value will always remain x2 unless the page is refreshed
+    }
+});

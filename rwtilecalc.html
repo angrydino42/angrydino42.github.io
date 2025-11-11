@@ -10,39 +10,104 @@
             <h1>Dino's Tile Canvas Calculator (DTCC)</h1>
             <button id="home" onclick="window.location.href='index.html'">Home</button>
             <button id="noteToggle" onclick="ntoggle()">Toggle Notes</button>
+            <button id="noteImgToggle" onclick="nItoggle()">Only Toggle Images</button>
+            <button
+                id="redirectToWiki"
+                onclick="window.location.href='https://rainworldmodding.miraheze.org/wiki/Creating_Custom_Tiles_and_Props'">
+                Creating Custom Assets
+            </button>
+            <!--Everything that has the class "note" or "noteimg" will be toggled by these buttons. if you're modifying the code,
+make sure you don't put anything you dont want to be toggled under there.-->
             <input type="image" src="assets/webgifs/images/1717box.png" onclick="secret()" />
             <div class="calcbox">
-                <p class="note" style="display: block">
-                    Info: Height and Width represent how many cells your tile makes up. Each cell is equal to 20px.
-                </p>
+                <div class="note" style="display: block">
+                    <p>
+                        Info: Height and Width represent how many cells your tile makes up. Each cell is equal to 20px.
+                    </p>
+                    <img
+                        class="noteimg"
+                        src="assets/webgifs/images/dtccimg/20x20pxshow.png"
+                        style="width: 10%; display: none"
+                        alt="a green square equal to 20px tall and wide with white squares surrounding it." />
+                </div>
                 <div id="basics" style="padding: 4.5px">
                     Height: <input type="text" id="H" oninput="heightCalc()" size="1" /><br />
                     Width: <input type="text" id="W" oninput="widthCalc()" size="1" /><br />
                 </div>
                 <!--its my website. i can do whatever I want.-->
-                <p class="note" style="display: block">
-                    rnd represents how many variations of your tile there are. these are randomly selected and are based
-                    off of the room's seed.
-                </p>
+                <div class="note" style="display: block">
+                    <p>
+                        rnd represents how many variations of your tile there are. these are randomly selected and are
+                        based off of the room's seed.
+                    </p>
+                    <img
+                        class="noteimg"
+                        src="assets/webgifs/images/dtccimg/rndshow.png"
+                        style="width: 10%; display: none"
+                        alt="a line of four green squares, each labelled in pink A, B, C, and D. Above, text reads 'rnd=4'" />
+                </div>
                 <label style="padding: 4.5px">rnd: <input type="text" id="rnd" oninput="rndCalc()" size="1" /></label>
                 <p id="rndzero" style="display: none">rnd cannot be zero!!</p>
                 <br />
-                <p class="note" style="display: block">
-                    bftiles are "Buffer" tiles. these cells are not considered part of the tile's geometry, but rather
-                    act as extra drawing space.
-                </p>
+                <div class="note" style="display: block">
+                    <p>
+                        EffectColor is a tag that can be applied in the init of the tile. Sign tiles are an example of
+                        what use this tag, and are labeled as either "EffectColor A"
+                        <span style="color: rgb(255, 0, 255); background-color: rgb(0, 0, 0)">(255,0,255)</span> or
+                        "EffectColor B"
+                        <span style="color: rgb(0, 255, 255); background-color: rgb(0, 0, 0)">(0,255,255)</span>. <br />
+                        These tiles require a larger width, applied similar to "rnd", for the colour intensity to be
+                        specified, where <b>black (0,0,0)</b> is fully opaque and
+                        <span style="color: rgb(255, 255, 255); background-color: rgb(0, 0, 0)"
+                            >white (255,255,255)</span
+                        >
+                        is fully transparent.
+                    </p>
+                    <img
+                        class="noteimg"
+                        src="assets/webgifs/images/dtccimg/rndeffectshow.png"
+                        style="width: 15%; display: none"
+                        alt="a line of four green squares, each labelled in pink A, B, C, and D. Above, text reads 'rnd=4', to the right, there are another four squares, but white and labelled A, B, C, and D in grey. Above, text reads 'EffectcolorA'" />
+                </div>
+                <input type="checkbox" id="effcol" name="effcol" />
+                <label for="effcol">EffectColor</label>
+                <br />
+                <div class="note" style="display: block">
+                    <p>
+                        bftiles are "Buffer" tiles. these cells are not considered part of the tile's geometry, but
+                        rather act as extra drawing space.
+                    </p>
+                    <img
+                        class="noteimg"
+                        src="assets/webgifs/images/dtccimg/bfshow.png"
+                        style="width: 10%; display: none"
+                        alt="a green square with pink squares surrounding it, showing the available area to draw in. Under, text reads 'bftiles=1'" />
+                </div>
                 <label style="padding: 4.5px">
                     bftiles: <input type="text" id="bf" oninput="bfCalc()" size="1"
                 /></label>
-                <br />
-                <p class="note" style="display: block">
-                    Rain World works on layers. each layer consists of 10 sublayers. This provides the game with its 3D
-                    effect. Larger Tiles can utilise multiple layers for greater depth.
-                </p>
+                <div id="secrettext" style="display: none">
+                    <h3 style="font-family: &quot;Comic Sans MS&quot;, &quot;Comic Sans&quot;">
+                        this website actually kills you if you try to use it actually
+                    </h3>
+                    <!--look ma, no stylesheet!-->
+                </div>
+                <div class="note" style="display: block">
+                    <p>
+                        Rain World works on layers. each layer consists of 10 sublayers. This provides the game with its
+                        3D effect. Larger Tiles can utilise multiple layers for greater depth.
+                    </p>
+                    <img
+                        class="noteimg"
+                        src="assets/webgifs/images/dtccimg/layershow.png"
+                        style="width: 3%; display: none"
+                        alt="A column of 5 squares, where each square gets progressively more green." />
+                </div>
                 <div class="layerbox" style="padding: 4.5px">
                     <button id="Layer1" onclick="layerMath()">1</button>
                     <button id="Layer2" onclick="layerMath()">2</button>
-                    <button id="manual" onclick="manual()">Manual</button><br />
+                    <button id="manual" onclick="manual()">Manual</button>
+                    <input type="image" src="assets/webgifs/images/1717box.png" onclick="markussecret()" /><br />
                     <p id="display">layer</p>
                     <!--markus i am going to kill you with hammers-->
                     <div id="manualLayerBox" style="display: none">
@@ -59,11 +124,18 @@
             <div id="answer" style="display: none">
                 <p><span id="sumdisplayH"></span>px by <span id="sumdisplayW"></span>px</p>
                 <p>Preview size: <span id="pdh"></span>px by <span id="pdw"></span>px</p>
-                <p class="note" style="display: block">
-                    note: preview size doesn't affect your canvas size! this is just the size of the tile's preview
-                    doodle.
-                </p>
-                <!--someone remind me to add photos of each process when i am sane enough-->
+                <div class="note" style="display: block">
+                    <p>
+                        note: preview size doesn't affect your canvas size! this is just the size of the tile's preview
+                        doodle.
+                    </p>
+                    <img
+                        class="noteimg"
+                        src="assets/webgifs/images/dtccimg/previewshow.png"
+                        style="width: 5%; display: none"
+                        alt="a grey background, with a small red square, representing the preview in level editors." />
+                </div>
+                <!--i added photos . im still insane though-->
             </div>
             <!--AngryDino42 was here-->
             <div id="secretimage" style="display: none">
