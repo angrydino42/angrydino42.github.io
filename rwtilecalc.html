@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <title>Dino's Tile Canvas Calculator</title>
+        <link rel="icon" type="image/png" href="assets/webgifs/icons/mycreations/rainworld/dinoscugicon.png" />
         <script src="script.js" defer></script>
     </head>
     <body>
@@ -76,12 +77,22 @@ make sure you don't put anything you dont want to be toggled under there.-->
                     <p>
                         bftiles are "Buffer" tiles. these cells are not considered part of the tile's geometry, but
                         rather act as extra drawing space.
+                        <br />
+                        Remember to distance your tiles on the canvas enough for both layer's buffer! (Toggle Images for
+                        example)
                     </p>
-                    <img
-                        class="noteimg"
-                        src="assets/webgifs/images/dtccimg/bfshow.png"
-                        style="width: 10%; display: none"
-                        alt="a green square with pink squares surrounding it, showing the available area to draw in. Under, text reads 'bftiles=1'" />
+                    <div id="bfimgs" style="display: table">
+                        <img
+                            class="noteimg"
+                            src="assets/webgifs/images/dtccimg/bfshow.png"
+                            style="width: 13.8%; display: none; padding: 5px; float: left; height: fit-content"
+                            alt="a green square with pink squares surrounding it, showing the available area to draw in. Under, text reads 'bftiles=1'" />
+                        <img
+                            class="noteimg"
+                            src="assets/webgifs/images/dtccimg/bfsubshow.png"
+                            style="width: 23%; display: none; padding: 5px; float: left"
+                            alt="a green rectangle with lighter green squares surrounding it, showing the available area to draw in. Under, another, but with blue squares." />
+                    </div>
                 </div>
                 <label style="padding: 4.5px">
                     bftiles: <input type="text" id="bf" oninput="bfCalc()" size="1"
@@ -141,6 +152,28 @@ make sure you don't put anything you dont want to be toggled under there.-->
             <div id="secretimage" style="display: none">
                 <img src="assets/webgifs/images/fandom/killharley.png" style="width: 20%" />
             </div>
+        </div>
+        <br />
+        <br />
+        <div id="sharespot" style="position: absolute">
+            <p>Psst! Wanna share this site on your page?</p>
+            <img src="assets/webgifs/buttons/buttontilecalc.png" />
+            <br />
+            <textarea
+                readonly=""
+                id="tilecalcbuttn"
+                style="
+                    resize: none;
+                    height: 23px;
+                    width: 78%;
+                    overflow-y: hidden;
+                    overflow-x: scroll;
+                    scrollbar-width: thin;
+                    white-space: nowrap;
+                ">
+&lt;a href='https://angrydino42.github.io/rwtilecalc.html' target='_blank'&gt;&lt;img src='https://angrydino42.github.io/assets/webgifs/buttons/buttontilecalc.png' alt="Dino's Rain World Tile Canvas Calculator (DTCC)"&gt;&lt;/a&gt;</textarea
+            >
+            <p style="margin: 0px">^^^ copy this! ^^^ paste it into your html!</p>
         </div>
     </body>
 </html>
