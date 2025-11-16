@@ -34,6 +34,8 @@ body {
     height: fit-content;
     text-decoration: none;
     margin: fit-content;
+    background-image: url(assets/webgifs/images/starrynew.png);
+    background-attachment: scroll;
 }
 #vertmenu button {
     padding: 12px;
@@ -44,4 +46,43 @@ body {
     grid-template-columns: auto 1fr;
     padding: 5px;
     height: 100vh;
+}
+.bttnrowbox {
+    display: flex;
+    flex-direction: column;
+}
+.bttnrowbox h5 {
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+.bttnrowbox p {
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    font-size: 14px;
+    text-align: center;
+}
+.bttnrowbox button {
+    width: fit-content;
+    margin: auto;
+}
+.bttnrowbox #madebttns {
+    width: fit-content;
+    margin: auto;
+    margin-top: 5px;
+}
+.bttnrow img {
+    padding: 4px;
+    float: left;
+    margin-bottom: 4px;
+}
+#virusdivider {
+    margin: auto;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
 }
