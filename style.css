@@ -15,12 +15,12 @@ body {
 }
 .window,
 #main {
-    width: 99%;
+    width: auto;
     height: max-content;
     padding: 2px;
 }
 .window {
-    margin: 8px;
+    margin: 2px;
 }
 .window,
 #vertmenu {
@@ -33,7 +33,7 @@ body {
     width: 144px;
     height: fit-content;
     text-decoration: none;
-    margin: fit-content;
+    margin: auto;
     background-image: url(assets/webgifs/images/starrynew.png);
     background-attachment: scroll;
 }
@@ -43,9 +43,10 @@ body {
 }
 .container {
     display: grid;
-    grid-template-columns: auto 1fr;
-    padding: 5px;
+    grid-template-columns: auto auto auto;
+    padding: 1px;
     height: 100vh;
+    justify-content: center;
 }
 .bttnrowbox {
     display: flex;
@@ -78,6 +79,10 @@ body {
     padding: 4px;
     float: left;
     margin-bottom: 4px;
+    margin: 0.9px;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
 }
 #virusdivider {
     margin: auto;
@@ -85,4 +90,18 @@ body {
     justify-content: center;
     text-align: center;
     display: flex;
+}
+#popup1 .window-body {
+    width: 183px;
+    height: fit-content;
+    text-align: center;
+    padding: 8px 7px 7px 7px;
+}
+#popup1 textarea {
+    resize: none;
+    height: 33px;
+    width: 78%;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    white-space: nowrap;
 }
