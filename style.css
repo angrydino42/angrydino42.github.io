@@ -105,3 +105,41 @@ body {
     overflow-x: scroll;
     white-space: nowrap;
 }
+
+/*Code below is what i used to make my first userboxes. keeping it here for archival sake:*/
+/*
+.userbox {
+    width: auto;
+    font-family: sans-serif;
+    border: 3px solid;
+    border-collapse: collapse;
+    box-sizing: border-box;
+}
+.id {
+    height: 83px;
+    width: 90px;
+    font-weight: bold;
+    box-sizing: border-box;
+    line-height: 2.2em;
+}
+.id img {
+    border: 5px solid #44A3C2;
+    box-sizing: border-box;
+    line-height: 2.2em;
+}
+.info {
+    border: 1px solid;
+    font-size: 24px;
+    font-weight: bold;
+}
+#namecred {
+    font-size: 4px;
+    font-weight: auto;
+    text-align: left;
+    line-height: 0;
+    position: absolute;
+    opacity: 40%;
+    top: 73px;
+    right: 158px;
+}
+*/
