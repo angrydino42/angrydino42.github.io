@@ -1,1 +1,0 @@
-for %%a in ("C:\Users\user\Desktop\stupid images\*.jfif") do ffmpeg -i "%%a" "C:\Users\user\Desktop\stupid images\%%~na.png"
