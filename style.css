@@ -7,6 +7,7 @@ body {
     flex: 34.59%;
     justify-content: center;
     align-content: center;
+    margin: auto;
 }
 .window,
 #main .title-bar {
@@ -47,6 +48,7 @@ body {
     padding: 1px;
     height: 100vh;
     justify-content: center;
+    width: auto;
 }
 .bttnrowbox {
     display: flex;
@@ -66,9 +68,10 @@ body {
     font-size: 14px;
     text-align: center;
 }
-.bttnrowbox button {
+.bttnrowbox .pressme {
     width: fit-content;
     margin: auto;
+    padding: auto;
 }
 .bttnrowbox #madebttns {
     width: fit-content;
@@ -84,16 +87,29 @@ body {
     justify-content: center;
     text-align: center;
 }
-#virusdivider {
-    margin: auto;
+.secondrow {
+    display: flex;
+    flex-direction: row;
+    padding: 12px;
+    flex: 34.59%;
+    justify-content: center;
+    align-content: center;
+}
+.stamp img {
+    width: 96px;
+    height: auto;
     align-content: center;
     justify-content: center;
     text-align: center;
-    display: flex;
+}
+#virusdivider img {
+    align-content: center;
+    justify-content: center;
+    text-align: center;
 }
 #popup1 .window-body {
     width: 183px;
-    height: fit-content;
+    height: max-content;
     text-align: center;
     padding: 8px 7px 7px 7px;
 }
@@ -106,6 +122,108 @@ body {
     white-space: nowrap;
 }
 
+.avi {
+    border: double 2px #ff0044;
+    background-image: url(assets/webgifs/backgrounds/bluecircuit.png);
+    width: fit-content;
+    height: fit-content;
+}
+#avistuff {
+    flex: auto auto auto;
+    margin: auto;
+    background-image: url(assets/webgifs/images/starrynew.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#avistuff .openingavistuff {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    flex-basis: auto;
+    flex-grow: 1;
+}
+.avitext h2 {
+    padding-left: 19px;
+    margin-top: 0;
+    color: #ff0044;
+}
+.avitext p {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 14px;
+    margin: auto;
+    color: #ff0044;
+    font-size: 17px;
+}
+.amdinotimerint p {
+    font-size: 26px;
+    text-align: center;
+    padding-bottom: 0;
+    padding-top: 2px;
+    margin: 0;
+}
+.amdinotimer {
+    float: none;
+    margin: 1px auto;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    padding-left: 14px;
+}
+.amdinotimer .time {
+    color: #ff0044;
+    font-size: 21px;
+    text-align: center;
+    padding-bottom: 0;
+    padding-top: 2px;
+    margin: 1px auto;
+    justify-content: center;
+}
+.amdinotimer p {
+    font-size: 30px;
+    text-align: center;
+    padding-top: 5px;
+    padding-left: 0;
+}
+#marriage {
+    height: auto;
+    width: 50px;
+    flex-grow: 1;
+}
+.aviid {
+    justify-content: center;
+    object-position: center;
+    padding: 5px;
+    margin: 0;
+    align-content: center;
+    display: grid;
+    grid-template-rows: auto auto auto;
+}
+.aviid img {
+    width: 83px;
+    height: fit-content;
+    padding: 5px;
+    overflow: hidden;
+    flex: 0;
+}
+.images {
+    display: flex;
+    flex-direction: column;
+    flex: 1 30 100px;
+}
+.extrabuttonss {
+    padding: 5px;
+}
+.extrabuttonss img {
+    height: 35px;
+    width: auto;
+    margin: 3px;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    float: left;
+}
 /*Code below is what i used to make my first userboxes. keeping it here for archival sake:*/
 /*
 .userbox {

@@ -1,0 +1,142 @@
+body {
+    background-image: url(/assets/webgifs/images/starry.png);
+}
+.page {
+    margin: 5px;
+    background-color: #282833;
+    font-family: "Px437 Acer710 CGA", Arial;
+    padding: 11px;
+    width: auto;
+    height: max-content;
+    justify-content: center;
+    object-fit: contain;
+    border: solid 2px #574a59;
+    text-align: center;
+    overflow: hidden;
+}
+.page p {
+    margin: 5px 30%;
+    font-size: 9px;
+    color: #ffffff;
+    text-align: center;
+    background-color: #3d3846;
+    padding: 7px 8px;
+}
+.page .innerpage {
+    height: max-content;
+}
+.page .titletext h3 {
+    color: #eeeeee;
+    border: solid #946d77;
+    background-color: #cd9692;
+    margin: 10px;
+    text-align: center;
+    padding: 10px;
+}
+.titletext {
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    padding: auto;
+    margin: 2px auto auto auto;
+    background-color: #574a59;
+}
+.titletext img {
+    width: auto;
+    height: fit-content;
+    padding: 8px;
+    background: #946d77;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 4px;
+    margin-bottom: 2px;
+}
+@font-face {
+    font-family: "Px437 Acer VGA 8x8";
+    src: url("assets/fonts/Px437_Acer_VGA_8x8.ttf") format("truetype");
+    font-family: "Px437 Acer710 CGA";
+    src: url("assets/fonts/Px437_Acer710_CGA.ttf") format("truetype");
+}
+.innerpage {
+    margin: 0 auto;
+    width: 1130px;
+}
+.page .innerpage .entry {
+    height: fit-content;
+    padding: 1px 1px auto 0;
+    margin: 3px;
+    font-size: 10px;
+    color: aliceblue;
+    text-decoration: none;
+    object-fit: contain;
+    display: block;
+    box-sizing: border-box;
+    line-height: 25px;
+}
+.entry span,
+.MoPI span {
+    display: table-cell;
+    vertical-align: middle;
+}
+.entry .site {
+    width: 482px;
+    text-align: left;
+}
+.entry .desc {
+    text-align: center;
+}
+.entry:nth-child(odd) {
+    background-color: #946d77;
+}
+.entry:nth-child(even) {
+    background-color: #cd9692;
+}
+.entry:nth-child(even):hover {
+    background-color: #574a59;
+}
+.entry:nth-child(odd):hover {
+    background-color: #3d3846;
+}
+.MoPI {
+    height: fit-content;
+    padding: 1px 1px auto 0;
+    margin: 3px;
+    font-size: 10px;
+    text-decoration: none;
+    object-fit: contain;
+    display: block;
+    box-sizing: border-box;
+    line-height: 25px;
+    background-color: #eeeeee;
+    color: #0a0a0a;
+}
+.MoPI:hover {
+    background-color: #0a0a0a;
+    color: #eeeeee;
+}
+#AH {
+    background: linear-gradient(#86b700, #e75550);
+}
+#AH:hover {
+    background: linear-gradient(#306000, #693000);
+}
+#pp {
+    color: #81a2be;
+    background-color: #1d1f21;
+}
+#pp:hover {
+    background-color: #282a2e;
+    color: #c5c8c6;
+}
+#pesto {
+    background-position:
+        0 0,
+        10px 10px;
+    background-image: radial-gradient(#00ffff 0.5px, transparent 1px), radial-gradient(#ff00ff 0.5px, transparent 1px);
+    background-size: 20px 20px;
+    background-color: black;
+    mask-position: var(--bgX) var(--bgY);
+}
+#pesto:hover {
+    background-image: radial-gradient(#ff00ff 0.5px, transparent 1px), radial-gradient(#00ffff 0.5px, transparent 1px);
+}

@@ -1,4 +1,5 @@
 # angrydino42.github.io
+
 personal website  
 Attached gifs, images and videos belong to their respective owners;  
 due to the nature of the internet i cannot prevent saving of the personal artwork I publish online.  
@@ -9,4 +10,10 @@ if you wish for me to add a link to your website on mine,
 please message me on discord @angrydino42.  
 I am very obsessive over checking notifications, so I can assure you that I will have seen your message.  
 However, I also have ADHD, and may get distracted and forget to reply.  
-If you've been waiting for over a day, message me again so it's fresh on my mind.  
+If you've been waiting for over a day, message me again so it's fresh on my mind.
+
+Repositories that made this site possible:
+
+-   https://unpkg.com/98.css
+-   https://unpkg.com/favicon.js/dist/favicon.min.js
+-   https://github.com/imballinst/married.git
