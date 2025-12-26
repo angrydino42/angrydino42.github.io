@@ -89,23 +89,26 @@ body {
 }
 .secondrow {
     display: flex;
-    flex-direction: row;
     padding: 12px;
-    flex: 34.59%;
     justify-content: center;
     align-content: center;
 }
 .stamp img {
     width: 96px;
     height: auto;
-    align-content: center;
-    justify-content: center;
-    text-align: center;
+    margin: 5px;
 }
-#virusdivider img {
+.stamp {
     align-content: center;
     justify-content: center;
     text-align: center;
+    display: flex;
+    flex: 23.1%;
+    flex-direction: row;
+}
+#virusdivider {
+    width: 51vh;
+    height: 58px;
 }
 #popup1 .window-body {
     width: 183px;
@@ -202,7 +205,7 @@ body {
 }
 .aviid img {
     width: 83px;
-    height: fit-content;
+    height: 50px;
     padding: 5px;
     overflow: hidden;
     flex: 0;

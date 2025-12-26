@@ -140,3 +140,14 @@ body {
 #pesto:hover {
     background-image: radial-gradient(#ff00ff 0.5px, transparent 1px), radial-gradient(#00ffff 0.5px, transparent 1px);
 }
+#mantid {
+    background:
+        linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+        url(https://ento360.com/mantid/static/images/background.jpg) no-repeat center center;
+    text-shadow: 0 3px 4px #000;
+}
+#mantid:hover {
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url(https://ento360.com/mantid/static/images/background.jpg) no-repeat center center;
+}
