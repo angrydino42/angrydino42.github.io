@@ -17,3 +17,4 @@ Repositories that made this site possible:
 -   https://unpkg.com/98.css
 -   https://unpkg.com/favicon.js/dist/favicon.min.js
 -   https://github.com/imballinst/married.git
+-   https://github.com/vojislav/lastfm-now-playing/blob/main/main.js

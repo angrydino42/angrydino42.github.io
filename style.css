@@ -16,9 +16,10 @@ body {
 }
 .window,
 #main {
-    width: 1483px;
+    width: 99%;
     height: max-content;
     padding: 3px;
+    grid-area: main;
 }
 .window {
     margin: 2px;
@@ -27,6 +28,7 @@ body {
 #vertmenu {
     width: fit-content;
     height: fit-content;
+    grid-area: vertmenu;
 }
 .vertmenu {
     display: block;
@@ -44,11 +46,15 @@ body {
 }
 .container {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template:
+        "popup1 main main main vertmenu"
+        "dinosection dinosection dinosection dinosection dinosection"
+        "AMsection AMsection AMsection AMsection AMsection ";
     padding: 1px;
     height: 100vh;
     justify-content: center;
     width: auto;
+    margin-bottom: 5px;
 }
 .bttnrowbox {
     display: flex;
@@ -78,14 +84,20 @@ body {
     margin: auto;
     margin-top: 5px;
 }
+
 .bttnrow img {
-    padding: 4px;
+    padding: 3px;
     float: left;
     margin-bottom: 4px;
+    padding-left: 2px;
+    padding-right: 5px;
     margin: 0.9px;
     align-content: center;
     justify-content: center;
     text-align: center;
+    width: 88px;
+    height: 31px;
+    white-space: nowrap;
 }
 .secondrow {
     display: flex;
@@ -115,6 +127,7 @@ body {
     height: max-content;
     text-align: center;
     padding: 8px 7px 7px 7px;
+    grid-area: popup1;
 }
 #popup1 textarea {
     resize: none;
@@ -214,15 +227,15 @@ body {
     display: flex;
     flex-direction: column;
     flex: 1 30 100px;
-}
-.extrabuttonss {
-    padding: 5px;
+    float: left;
 }
 .extrabuttonss img {
     height: 35px;
     width: 100px;
     margin: 3px;
-    float: left;
+    max-width: 100px;
+    max-height: 35px;
+    padding: 1px;
 }
 .icons {
     display: flex;
@@ -258,6 +271,89 @@ body {
 }
 #cardreader:hover {
     background: url(assets/webgifs/icons/98/cardreaderdith.png);
+}
+#dinosection {
+    grid-area: dinosection;
+}
+#AMsection {
+    grid-area: AMsection;
+}
+#AMsection .anotherdiv {
+    display: flex;
+    flex-direction: column;
+    object-fit: contain;
+}
+#dinosection .intro,
+#AMsection .intro {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    flex-basis: auto;
+    flex-grow: 1;
+    overflow: auto;
+}
+#dinosection .intro p,
+#AMsection .intro p {
+    padding: 5px;
+    overflow: auto;
+    flex-wrap: wrap;
+    font-size: 18px;
+}
+#player {
+    width: 198px;
+    height: fit-content;
+    overflow: auto;
+    flex-wrap: wrap;
+}
+#player table {
+    border: solid 2px black;
+}
+#rsdwarning {
+    display: block;
+    color: red;
+    background-color: black;
+    background-size: contain;
+    text-align: center;
+    line-height: 34px;
+}
+#rsdwarning h1 {
+    padding-top: 8px;
+    font-size: 30px;
+    margin: 0;
+}
+#rsdwarning h2 {
+    font-size: 25px;
+    padding: 0;
+    margin: 0;
+}
+#rsdwarning h3 {
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+}
+#rsdwarning h4 {
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+}
+#AMblink img {
+    flex: 1 1 0;
+    width: 205px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+#moassetscont {
+    padding: 14px;
+    width: 12px;
+    height: 12px;
+    margin: 2px;
+    background: url(assets/webgifs/icons/mycreations/rainworld/MoAssets_nobg.png);
+}
+#moassetscont:hover {
+    background: url(assets/webgifs/icons/mycreations/rainworld/MoAssetsinv_nobg.png);
 }
 /*Code below is what i used to make my first userboxes. keeping it here for archival sake:*/
 /*

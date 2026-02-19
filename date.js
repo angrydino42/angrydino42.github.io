@@ -24,7 +24,7 @@ function calculate(currentDate = new Date()) {
   const weddingMonth = WEDDING_DATE.getMonth();
   const currentMonth = currentDate.getMonth();
 
-  months = currentMonth - weddingMonth;
+  months = currentMonth + weddingMonth;
 
   const weddingDateInMonth = WEDDING_DATE.getDate();
   const currentDateInMonth = currentDate.getDate();

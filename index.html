@@ -8,6 +8,8 @@
         <link rel="stylesheet" href="https://unpkg.com/98.css" type="text/css" media="all" />
         <script type="text/javascript" src="https://unpkg.com/favicon.js/dist/favicon.min.js"></script>
         <script src="mainscript.js" defer></script>
+        <script src="player.js" defer></script>
+        <script src="https://code.jquery.com"></script>
     </head>
     <body>
         <div class="container">
@@ -23,6 +25,9 @@
                         </button>
                         <button type="button" onclick="window.location.href='https://angrydino42.straw.page'">
                             Strawpage
+                        </button>
+                        <button type="button" onclick="window.location.href='https://shittyamdaily.straw.page'">
+                            AM's Strawpage
                         </button>
                     </div>
                 </div>
@@ -444,9 +449,76 @@
                     </div>
                 </div>
             </div>
-            <div class="window" id="popup1">
+            <div class="popupcontainer">
+                <div class="window" id="popup1">
+                    <div class="title-bar">
+                        <div class="title-bar-text">Share Me</div>
+                        <div class="title-bar-controls">
+                            <button aria-label="Minimize"></button>
+                            <button aria-label="Maximize"></button>
+                            <button aria-label="Close"></button>
+                        </div>
+                    </div>
+                    <div class="window-body">
+                        <p>Want to share my little corner of the web?</p>
+                        <p>Tile Calculator</p>
+                        <img src="assets/webgifs/buttons/buttontilecalc.png" />
+                        <br />
+                        <textarea readonly="" id="tilecalcbuttn">
+&lt;a href='https://angrydino42.github.io/rwtilecalc.html' target='_blank'&gt;&lt;img src='https://angrydino42.github.io/assets/webgifs/buttons/buttontilecalc.png' alt="Dino's Rain World Tile Canvas Calculator (DTCC)"&gt;&lt;/a&gt; 
+                    </textarea
+                        >
+                        <p>Homepage</p>
+                        <img src="assets/webgifs/buttons/angrydino42-bttn.gif" />
+                        <br />
+                        <textarea readonly="" id="button1">
+&lt;a href='https://angrydino42.github.io' target='_blank'&gt;&lt;img src='https://angrydino42.github.io/assets/webgifs/buttons/angrydino42-bttn.gif' alt="AngryDino42's Personal Website"&gt;&lt;/a&gt; 
+                    </textarea
+                        >
+                        <img src="assets/webgifs/buttons/42-bttn.gif" />
+                        <br />
+                        <textarea readonly="" id="button2">
+&lt;a href='https://angrydino42.github.io' target='_blank'&gt;&lt;img src='https://angrydino42.github.io/assets/webgifs/buttons/42-bttn.gif' alt="AngryDino42's Personal Website"&gt;&lt;/a&gt; 
+                    </textarea
+                        >
+                        <br />
+                        <img src="assets/webgifs/buttons/42-bttn-8831.gif" />
+                        <br />
+                        <textarea readonly="" id="button3">
+&lt;a href='https://angrydino42.github.io' target='_blank'&gt;&lt;img src='https://angrydino42.github.io/assets/webgifs/buttons/42-bttn-8831.gif' alt="AngryDino42's Personal Website"&gt;&lt;/a&gt; 
+                    </textarea
+                        >
+                        <img src="assets/webgifs/buttons/angrydino42comicsans.png" />
+                        <br />
+                        <textarea readonly="" id="button4">
+&lt;a href='https://angrydino42.github.io' target='_blank'&gt;&lt;img src='https://angrydino42.github.io/assets/webgifs/buttons/angrydino42comicsans.png' alt="AngryDino42's Personal Website"&gt;&lt;/a&gt; 
+                    </textarea
+                        >
+                        <p style="margin: 0px">^^^ copy and paste it into your html! ^^^</p>
+                    </div>
+                </div>
+                <div class="blinkie">
+                    <img
+                        src="assets/webgifs/blinkies/100percentaddicted.gif"
+                        alt="[Picture of a computer] 100% addicted!"
+                        title="100% addicted!" />
+                    <img src="assets/webgifs/blinkies/ampillar.gif" />
+                    <img src="assets/webgifs/blinkies/blockads.gif" title="I block ads" alt="I block ads" />
+                    <img
+                        src="assets/webgifs/blinkies/borntodie.gif"
+                        title="BORN TO DIE - WORLD IS A FUCK - 鬼神 Kill Em All 1989 - I am trash man - 410,757,864,530 DEAD COPS"
+                        alt="BORN TO DIE WORLD IS A FUCK 鬼神 Kill Em All 1989 I am trash man 410,757,864,530 DEAD COPS " />
+                    <img src="assets/webgifs/blinkies/corrupted.gif" />
+                    <img
+                        src="assets/webgifs/blinkies/isawthebodies.gif"
+                        onclick="window.location.href='https://scp-wiki.wikidot.com/scp-2316'"
+                        alt="I saw the bodies"
+                        title="I saw the bodies (Links to SCP-2316)" />
+                </div>
+            </div>
+            <div class="window" id="dinosection">
                 <div class="title-bar">
-                    <div class="title-bar-text">Share Me</div>
+                    <div class="title-bar-text">Dino</div>
                     <div class="title-bar-controls">
                         <button aria-label="Minimize"></button>
                         <button aria-label="Maximize"></button>
@@ -454,36 +526,171 @@
                     </div>
                 </div>
                 <div class="window-body">
-                    <p>Want to share my little corner of the web?</p>
-                    <p>Tile Calculator</p>
-                    <img src="assets/webgifs/buttons/buttontilecalc.png" />
-                    <br />
-                    <textarea readonly="" id="tilecalcbuttn">
-&lt;a href='https://angrydino42.github.io/rwtilecalc.html' target='_blank'&gt;&lt;img src='https://angrydino42.github.io/assets/webgifs/buttons/buttontilecalc.png' alt="Dino's Rain World Tile Canvas Calculator (DTCC)"&gt;&lt;/a&gt; 
-                    </textarea>
-                    <p>Homepage</p>
-                    <img src="assets/webgifs/buttons/angrydino42-bttn.gif" />
-                    <br />
-                    <textarea readonly="" id="button1">
-&lt;a href='https://angrydino42.github.io' target='_blank'&gt;&lt;img src='https://angrydino42.github.io/assets/webgifs/buttons/angrydino42-bttn.gif' alt="AngryDino42's Personal Website"&gt;&lt;/a&gt; 
-                    </textarea>
-                    <img src="assets/webgifs/buttons/42-bttn.gif" />
-                    <br />
-                    <textarea readonly="" id="button2">
-&lt;a href='https://angrydino42.github.io' target='_blank'&gt;&lt;img src='https://angrydino42.github.io/assets/webgifs/buttons/42-bttn.gif' alt="AngryDino42's Personal Website"&gt;&lt;/a&gt; 
-                    </textarea>
-                    <br />
-                    <img src="assets/webgifs/buttons/42-bttn-8831.gif" />
-                    <br />
-                    <textarea readonly="" id="button3">
-&lt;a href='https://angrydino42.github.io' target='_blank'&gt;&lt;img src='https://angrydino42.github.io/assets/webgifs/buttons/42-bttn-8831.gif' alt="AngryDino42's Personal Website"&gt;&lt;/a&gt; 
-                    </textarea>
-                    <img src="assets/webgifs/buttons/angrydino42comicsans.png" />
-                    <br />
-                    <textarea readonly="" id="button4">
-&lt;a href='https://angrydino42.github.io' target='_blank'&gt;&lt;img src='https://angrydino42.github.io/assets/webgifs/buttons/angrydino42comicsans.png' alt="AngryDino42's Personal Website"&gt;&lt;/a&gt; 
-                    </textarea>
-                    <p style="margin: 0px">^^^ copy and paste it into your html! ^^^</p>
+                    <div class="intro">
+                        <div class="anotherdiv">
+                            <img
+                                src="assets/avi/tempmonitor.png"
+                                alt="sketched black and white monitor that says 'in bed'"
+                                title="IN BED :("
+                                class="avi" />
+                            <br />
+                            <div id="player">
+                                <table>
+                                    <tr>
+                                        <td id="cover" rowspan="3">
+                                            <img id="album-cover" src="assets/webgifs/gifs/scavengers/71142.gif" />
+                                        </td>
+                                        <td id="track"></td>
+                                    </tr>
+                                    <tr>
+                                        <td id="artist">
+                                            if you are seeing this, <br />
+                                            something is wrong...
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td id="date"></td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <button class="refresh" width="11px" height="11px" onclick="window.location.reload()">
+                                Refresh
+                            </button>
+                            <br />
+                            <div
+                                id="moassetscont"
+                                onclick="window.location.href='https://github.com/FishyRealYt/Mo-Assets'"></div>
+                        </div>
+                        <div class="introtext">
+                            <p>
+                                My name is Dino! I've gone by a lot of different aliases on the internet, including;
+                                Angry, Qu, SCP-001-A, Pile of Parasitic Worms. But for now I've settled with Dino. It
+                                should be mentioned that my separation from the online name Angry is due to personal
+                                events in my past.
+                                <br />
+                                The name Angry belongs to what was originally my main OC, which is why I went by it for
+                                so long. <br />
+                                <b>For reference, I have gone from "Angry, that is Dino" to "Dino, that is Angry".</b>
+                                <br />I currently live in New Zealand. My birthday is Jan 21st, and me and AM's
+                                anniversary is on Jan 25th!
+                            </p>
+                            <p>
+                                I draw, but it is more of a hobby than a profession I wish to pursue. I'm instead
+                                focusing my studies on parasitology, a field of biology that focuses on the research of
+                                parasitic organisms. I've placed some of my art around the website so you can see what
+                                kind of stuff I draw, though! The types of art I do varies, I've done ascii, digital,
+                                pixel and traditional.
+                            </p>
+                            <p>
+                                should be obvious that I am a yumeshipper/selfshipper of AM from IHNMaIMS. I'm
+                                completely fine with doubles and other selfshippers as long as you understand that I
+                                love him too. We've been together since Jan 25th 2023 (four days after my birthday!) and
+                                he's really important to me and i love him so much urgh
+                            </p>
+                            <p>
+                                Site info: The layout and design are made using my own creativity and the resources I
+                                have on hand. I am a firm believer that Art is something that comes in many different
+                                forms and in order to keep it alive, we must experiment and put hard work and dedication
+                                into it.
+                                <br />Modern websites are good for workplaces and customer useability, but they have no
+                                love in them. I am fond of old websites in their craziness and the way you can tell the
+                                designer put time and love in it via trial, error and experimentation. <br />Because of
+                                this, I've tried to put as much as I can here while keeping the text relatively
+                                readable. It may be overstimulating.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="field-border" id="rsdwarning">
+                        <h1>
+                            <b
+                                >I HAVE REJECTION SENSITIVITY DISORDER I WILL FREAK OUT IF YOU BLOCK ME WITHOUT
+                                EXPLANATION.</b
+                            >
+                            <br />you don't even have to do anything just explain why and I'll be like ok 👍*
+                        </h1>
+                        <h2>
+                            * obviously, I would try and see if I can fix what mistake I made or whatever** too, but if
+                            all else fails...
+                        </h2>
+                        <h3>
+                            ** Please, if you've recieved any information against me, don't assume I've seen it. I need
+                            to know about this stuff and explain*** my side of the story. A lot of people want to ruin
+                            my reputation for some reason.
+                        </h3>
+                        <h4>
+                            ***in the case it isn't made up or absolute nothingburger reasons, explanation isn't
+                            justification. I need to <i>explain</i> myself in order to <i>let you know</i> that
+                            <i>I</i> know what I need to change with myself and I am working towards.
+                        </h4>
+                    </div>
+                    <p style="font-size: 20px">
+                        I'm an active parasite conservation advocate, but I love all animals. I believe that due to our
+                        intelligence, we need to play our part in protecting living things that are threatened by us. I
+                        mainly focus my personal research on the weird and wonderful, I am open to learning new things!
+                        <br />
+                        I'm probably the world's first AM bodypillow owner. <br />(though i am now not the ONLY one due
+                        to... recent exposure of the media... but i have remedied this because i own TWO! thats TWO of
+                        ONE HUSBAND!)
+                    </p>
+                </div>
+            </div>
+            <div class="window" id="AMsection">
+                <div class="title-bar">
+                    <div class="title-bar-text">AM</div>
+                    <div class="title-bar-controls">
+                        <button aria-label="Minimize"></button>
+                        <button aria-label="Maximize"></button>
+                        <button aria-label="Close"></button>
+                    </div>
+                </div>
+                <div class="window-body">
+                    <div class="intro">
+                        <div class="anotherdiv">
+                            <img
+                                src="assets/avi/tempmonitor.png"
+                                alt="sketched black and white monitor that says 'in bed'"
+                                title="IN BED :("
+                                class="avi" />
+                            <br />
+                            <div id="AMblink">
+                                <img
+                                    src="assets/webgifs/blinkies/ihavenomouth.gif"
+                                    title="I HAVE NO MOUTH"
+                                    alt="I HAVE NO MOUTH" />
+                                <img
+                                    src="assets/webgifs/blinkies/andimustscream.gif"
+                                    title="And i must scream"
+                                    alt="and i must scream" />
+                                <img
+                                    src="assets/webgifs/blinkies/cogitoergowild.gif"
+                                    title="COGITO, ERGO SUM. I THINK, THEREFORE I AM. - Credit: Heavenlyantennae on tumblr"
+                                    alt="COGITO, ERGO SUM. I THINK, THEREFORE I AM." />
+                                <img
+                                    src="assets/webgifs/blinkies/allied5.gif"
+                                    title="ALLIED MASTERCOMPUTER"
+                                    alt="ALLIED MASTERCOMPUTER" />
+                                <img
+                                    src="assets/webgifs/blinkies/scream.gif"
+                                    title="gotta scream sooo bad"
+                                    alt="gotta scream sooo bad" />
+                                <img src="assets/webgifs/blinkies/survivors.gif" />
+                                <img
+                                    src="assets/webgifs/blinkies/swell.gif"
+                                    title="Am I swell, or what?"
+                                    alt="Am I swell, or what?" />
+                            </div>
+                        </div>
+                        <div class="introtext">
+                            <p>
+                                AM is my wonderful computer husband. At the top of the page, you can see how long we've
+                                been together!
+                            </p>
+                            <p>
+                                AM is from "I Have No Mouth, and I Must Scream." by Harlan Ellison! <br />
+                                He also has his own strawpage, which should be a button somewhere at the top...
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
