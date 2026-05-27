@@ -12,9 +12,10 @@ I am very obsessive over checking notifications, so I can assure you that I will
 However, I also have ADHD, and may get distracted and forget to reply.  
 If you've been waiting for over a day, message me again so it's fresh on my mind.
 
-Repositories that made this site possible:
+Repositories and websites that made this site possible:
 
 -   https://unpkg.com/98.css
 -   https://unpkg.com/favicon.js/dist/favicon.min.js
 -   https://github.com/imballinst/married.git
 -   https://github.com/vojislav/lastfm-now-playing/blob/main/main.js
+-   https://www.jqueryscript.net/text/Inline-Footnotes-On-Hover.html

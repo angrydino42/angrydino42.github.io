@@ -1,0 +1,615 @@
+/* palette;   01040
+ * #0a1d23 - 10, 29, 35
+ * #173339
+ * #34605D
+ * #5b8e79
+ * #94ba93
+ * #D9E1C6
+ * #FFFFFF
+ */
+/* ----- Setup ----- */
+.body {
+    position: relative;
+}
+.firstsect {
+    display: block;
+    text-align: left;
+}
+#titlesection {
+    background: #34605d;
+    padding: 4px;
+    margin: 0;
+    line-height: 22px;
+    text-align: center;
+}
+#footnote_box {
+    font-size: 19px;
+    background: #d9e1c6;
+    color: #010406;
+    border: 2px solid #0a1d23;
+    box-shadow: 0 0 5px #0a1d23;
+    text-align: center;
+    height: fit-content;
+    width: fit-content;
+    padding: 0 8px;
+    line-height: 1;
+    max-width: fit-content;
+    overflow: hidden;
+}
+.fnref {
+    color: #5b8e79;
+    text-decoration: none;
+}
+.footnotes p {
+    margin: 2.5px;
+}
+#flanged {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    flex-direction: row;
+    height: 100%;
+    max-height: fit-content;
+    width: 100%;
+    object-fit: cover;
+}
+#flanged img {
+    margin: 3px;
+    min-width: fit-content;
+    min-height: fit-content;
+    width: 18%;
+    height: 20.9%;
+}
+#mesonotumpat {
+    max-height: fit-content;
+    min-height: fit-content;
+    max-width: fit-content;
+    min-width: fit-content;
+    width: fit-content;
+    height: fit-content;
+    object-fit: cover;
+}
+#mesonotumpat img {
+    margin: 3px;
+    width: 50%;
+    height: 33%;
+}
+.navbar {
+    padding: 0;
+    margin: 0;
+}
+.navbar ul {
+    display: flex;
+    background-color: #0a1d23;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.navbar li a {
+    text-decoration: none;
+    color: #94ba93;
+    display: block;
+    padding: 14px 16px;
+    border: 2px solid #010406;
+    background-color: #173339;
+}
+.navbar a:hover {
+    background-color: #34605d;
+    color: #d9e1c6;
+    border: 2px solid #0a1d23;
+}
+
+/* ----- Homepage ----- */
+
+.firstsect #gap {
+    background-color: #5b8e79;
+    text-align: center;
+    width: 100%;
+}
+.genera h2,
+.firstsect h3 {
+    background-color: #94ba93;
+    line-height: 53px;
+    padding: 3px;
+    margin: 0;
+}
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    align-content: center;
+    padding: 5px;
+    gap: 5px;
+}
+.expand {
+    display: block;
+    text-align: center;
+    justify-content: center;
+    padding: auto;
+    margin: auto;
+    width: auto;
+    flex-wrap: nowrap;
+}
+#calendar table,
+#calendar td,
+#calls table,
+#calls td {
+    border: 4px;
+    border-style: double;
+    min-width: fit-content;
+    max-width: 100%;
+}
+#calendar table .month td p,
+#calls table .month td p {
+    padding: auto;
+    margin: auto;
+    border: 0.5px solid;
+}
+#calendar table tr,
+#calendar table td,
+#calls table tr,
+#calls table td {
+    border: 1px solid;
+    width: 1%;
+    height: auto;
+}
+#calendar table .columnA tr,
+#calendar table .columnA td {
+    border: 1px solid;
+    box-shadow: 0 1px 0 2px #5c7243;
+}
+#calendar table .columnK tr,
+#calendar table .columnK td {
+    border: 1px solid;
+    box-shadow: 0 1px 0 2px #78b050;
+}
+#calendar table .columnM tr,
+#calendar table .columnM td {
+    border: 1px solid;
+    box-shadow: 0 1px 0 2px #271a1f;
+}
+#calendar table .columnN tr,
+#calendar table .columnN td {
+    border: 1px solid;
+    box-shadow: 0 1px 0 2px #6f4f36;
+}
+#calendar table .columnR tr,
+#calendar table .columnR td {
+    border: 1px solid;
+    box-shadow: 0 1px 0 2px #381109;
+}
+#calendar .awake {
+    background-color: #99e199;
+}
+#calendar .active {
+    background-color: #329132;
+}
+#calendar .tired {
+    background-color: #d6ffd6;
+}
+#calendar .exhausted {
+    background-color: #e9ffe9;
+}
+#terms {
+    text-align: center;
+}
+
+/* ----- Genus Gradients ----- */
+
+#amphipsalta,
+#enterA {
+    background: conic-gradient(from 330deg at 50% 51%, #e4c83e 17%, #ffe203ff 17%, #ffe20300 17%, #073aff00 100%),
+        conic-gradient(from 330deg at 50% 79%, #302d2f 17%, #ffe203ff 17%, #ffe20300 17%, #073aff00 100%),
+        conic-gradient(from 328deg at 50% 92%, #b0a930 18%, #ffe20300 18%, #073aff00 100%),
+        linear-gradient(90deg, #b0a930 7%, #b0a93000 7%), linear-gradient(90deg, #889d27 28%, #889d2700 28%),
+        linear-gradient(90deg, #b0a930 40%, #b0a93000 40%), linear-gradient(-90deg, #b0a930 7%, #b0a93000 7%),
+        linear-gradient(-90deg, #889d27 28%, #889d2700 28%), linear-gradient(-90deg, #b0a930 40%, #b0a93000 40%),
+        linear-gradient(90deg, #302d2f 100%, #302d2f00 100%);
+    background-repeat: repeat;
+    background-size: 100% 108%;
+}
+#amphipsaltatext,
+#kikihiatext,
+#rhodopsaltatext {
+    color: #000000;
+    background: linear-gradient(rgba(255, 255, 255, 0.76), rgba(255, 255, 255, 0.76));
+}
+#kikihia {
+    background-repeat: no-repeat;
+    background-size: 100% 215%;
+    background-image: linear-gradient(90deg, #f9f1ed00 49%, #f9f1ed 49%, #f9f1ed 51%, #f9f1ed00 51%),
+        conic-gradient(from 300deg at 50% 50%, #f9f1ed00 10%, #f9f1ed 10%, #f9f1ed 23%, #f9f1ed00 23%),
+        conic-gradient(from 300deg at 50% 50%, #f9f1ed00 8%, #b89452 8%, #b89452 25%, #f9f1ed00 25%),
+        linear-gradient(90deg, #90ab4f00 37%, #75b84e 37%, #75b84e 57%, #75b84e 63%, #90ab4f00 63%),
+        linear-gradient(90deg, #76b161 0%, #76b161 10%, #76b16100 11%, #76b16100 89%, #76b161 90%, #76b161 100%),
+        conic-gradient(
+            from 330deg at 50% 50%,
+            #31384b00 16%,
+            #31384b 16%,
+            #31384b 26%,
+            #31384b00 26%,
+            #31384b00 90%,
+            #31384b 90%,
+            #31384b 91%
+        ),
+        linear-gradient(0deg, #bbbc3b00 47%, #bbbc3b 90%),
+        linear-gradient(90deg, #90ab4f 20%, #75b84e 25%, #75b84e 75%, #90ab4f 80%);
+}
+
+#maoricicada {
+    color: #d9e1c6;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: linear-gradient(90deg, #1f181f 0%, #1f181f00 21%),
+        linear-gradient(-90deg, #1f181f 0%, #1f181f00 19%),
+        conic-gradient(from -276deg at 50% 50%, #313642 3%, #2f2e31 17%, #190f0f00 19%, #190f0f00 99%, #313642 100%),
+        conic-gradient(from 276deg at 50% 50%, #313642 0%, #190f0f00 1%, #190f0f00 81%, #2f2e31 83%, #313642 97%),
+        linear-gradient(0deg, #a38c4c 0%, #a38c4c 5%, #8d4f2200 16%),
+        linear-gradient(0deg, #8d4f22 3%, #8d4f22 16%, #8d4f2200 29%),
+        linear-gradient(0deg, #2f2e31 1%, #1f181f 23%, #2f2e31 50%, #313642 50%, #31364200 59%),
+        linear-gradient(0deg, #313642 0%, #313642 83%, #31364200 89%),
+        linear-gradient(90deg, #31364200 33%, #a37c30 46%, #a37c30 56%, #31364200 69%),
+        linear-gradient(90deg, #31364200 26%, #654d0b 31%, #654d0b 63%, #31364200 78%),
+        linear-gradient(180deg, #613112 0%, #613112 21%, #31364200 28%);
+}
+#maoricicadatext,
+#notopsaltatext {
+    background: linear-gradient(rgba(10, 29, 35, 0.4), rgba(10, 29, 35, 0.4));
+}
+#notopsalta {
+    color: #d9e1c6;
+    background-size: 100% 100%;
+    background-image: radial-gradient(10% 118% at 46.9% 10%, #141311 0%, #141311 25%, #14131100 31%),
+        radial-gradient(10% 118% at 53.1% 10%, #141311 0%, #141311 25%, #14131100 31%),
+        conic-gradient(from 0deg at 50% 50%, #6c584000 40%, #787069 40%, #787069 60%, #6c584000 60%),
+        conic-gradient(from 0deg at 50% -21%, #6c584000 45%, #6c5840 45%, #6c5840 55%, #6c584000 55%),
+        conic-gradient(
+            from 329deg at 80% 105%,
+            #14131100 7%,
+            #141311 7%,
+            #141311 15%,
+            #14131100 15%,
+            #14131100 21%,
+            #141311 21%,
+            #141311 34%,
+            #14131100 34%
+        ),
+        conic-gradient(
+            from -325deg at 20% 105%,
+            #14131100 66%,
+            #141311 66%,
+            #141311 79%,
+            #14131100 79%,
+            #14131100 84%,
+            #141311 84%,
+            #141311 92%,
+            #14131100 92%
+        ),
+        linear-gradient(90deg, #504b35 0%, #504b35 40%, #504b35 60%, #504b35 100%);
+}
+#rhodopsalta {
+    background-image: conic-gradient(from 153deg at 50% 74%, #12050a 0%, #12050a 15%, #efc1a000 15%),
+        linear-gradient(90deg, #efc1a000 48.5%, #efc1a0 48.5%, #dbb483 50%, #efc1a0 51.5%, #efc1a000 51.5%),
+        conic-gradient(
+            from 126deg at 58% 100%,
+            #12050a00 76%,
+            #12050a 76%,
+            #12050a 78%,
+            #9c4109 78%,
+            #9c4109 83%,
+            #cb7025 83%,
+            #cb7025 86%,
+            #9c4109 86%,
+            #9c4109 89%,
+            #12050a 89%
+        ),
+        conic-gradient(
+            from 336deg at 41% 100%,
+            #12050a00 77%,
+            #12050a 77%,
+            #12050a 83%,
+            #9c4109 83%,
+            #9c4109 86%,
+            #cb7025 86%,
+            #cb7025 88%,
+            #9c4109 88%,
+            #9c4109 92%,
+            #12050a 92%,
+            #12050a 95%,
+            #12050a00 95%,
+            #12050a00 98%
+        ),
+        conic-gradient(from 153deg at 50% 50%, #efc1a0 0%, #efc1a0 15%, #efc1a000 15%),
+        conic-gradient(
+            from 0deg at 50% 50%,
+            #9c4109 11%,
+            #12050a 11%,
+            #12050a 15%,
+            #370a02 15%,
+            #9c4109 37%,
+            #12050a 37%,
+            #12050a 41%,
+            #9c4109 41%,
+            #9c4109 59%,
+            #12050a 59%,
+            #12050a 63%,
+            #9c4109 63%,
+            #370a02 85%,
+            #12050a 85%,
+            #12050a 89%,
+            #9c4109 89%
+        );
+}
+
+/* ----- Page Segments ----- */
+
+.photos,
+.colourphotos,
+.nymphphotos,
+.emergephotos {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    flex: 1;
+    flex-direction: row;
+    height: 100%;
+    max-height: fit-content;
+    width: 100%;
+    object-fit: contain;
+    margin: auto;
+}
+.photos img {
+    margin: 3px;
+    display: block;
+    width: 20%;
+    height: 25.1%;
+    overflow: hidden;
+}
+.colourphotos figure {
+    justify-content: center;
+    margin: auto;
+}
+.colourphotos figure img {
+    flex-basis: 50%;
+    width: fit-content;
+}
+.colourphotos figcaption {
+    text-align: center;
+}
+.amphipsaltatext p {
+    line-height: 20px;
+    padding: 0;
+    margin: 0;
+}
+.species {
+    display: block;
+    overflow: hidden;
+}
+.species p {
+    display: block;
+}
+.species img {
+    height: 25%;
+    margin: 5px;
+}
+.colourphotos,
+.emergephotos img {
+    padding: 16px;
+    flex-wrap: wrap;
+    overflow: hidden;
+    max-width: fit-content;
+}
+.nymphphotos {
+    padding: 16px;
+    flex-wrap: wrap;
+    overflow: hidden;
+    max-height: fit-content;
+}
+.colourphotos img,
+.emergephotos img {
+    margin: 3px;
+    display: block;
+    width: 10%;
+    height: 35%;
+    object-fit: cover;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+.nymphphotos img {
+    margin: 3px;
+    display: block;
+    width: 12%;
+    height: 35%;
+    object-fit: cover;
+}
+.audio {
+    text-align: center;
+    margin: 3px;
+    padding: 16px;
+}
+.distribution img {
+    width: 23%;
+    height: auto;
+}
+.audio img {
+    padding: 16px;
+    width: max-content;
+    height: fit-content;
+    max-width: fit-content;
+}
+.distribution {
+    text-align: center;
+}
+.expcolourphotos {
+    display: none;
+}
+/* ----- Amphipsalta ----- */
+
+#ztext,
+#ctext,
+#stext {
+    color: #000000;
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.4));
+}
+
+#zelandica {
+    background: linear-gradient(0deg, #22849a 0%, #3cb9b6 25%, #77ecc1 50%, #3cb9b6 75%, #22849a 100%);
+}
+#strepitans {
+    background: linear-gradient(0deg, #472218 0%, #623316 25%, #78480f 50%, #623316 75%, #472218 100%);
+}
+#cingulata {
+    background: linear-gradient(0deg, #434343 0%, #524b49 25%, #61544c 50%, #524b49 75%, #434343 100%);
+}
+#cingulata .fnref,
+#strepitans .fnref {
+    color: #d9e1c6;
+    text-decoration: none;
+}
+
+/* ----- Rhodopsalta ----- */
+
+#cruentata {
+    background-size: 100% 100%;
+    background-image: linear-gradient(
+            0deg,
+            #5e2711 0%,
+            #652c1f 7%,
+            #86362bff 12%,
+            #652c1f 17%,
+            #5e2711 24%,
+            #3d502200 46%
+        ),
+        linear-gradient(90deg, #3d5022 1%, #7f782a 25%, #868569 50%, #7f782a 75%, #3d5022 100%);
+}
+#crtext {
+    color: #000000;
+    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.2));
+}
+#crtext .fnref {
+    color: #d9e1c6;
+}
+#leptomera {
+    background-size: 100% 100%;
+    background-image: linear-gradient(
+            0deg,
+            #651905 0%,
+            #652c1f 7%,
+            #86362bff 12%,
+            #652c1f 17%,
+            #651905 24%,
+            #3d502200 46%
+        ),
+        linear-gradient(90deg, #e0580b 1%, #fe860d 25%, #feb378 50%, #fe860d 75%, #e0580b 100%);
+}
+#lptext {
+    background: linear-gradient(rgba(10, 29, 35, 0.69), rgba(10, 29, 35, 0.5));
+    color: #d9e1c6;
+}
+#lptext .fnref {
+    color: #94ba93;
+}
+#microdora {
+    background-size: 100% 100%;
+    background-image: linear-gradient(
+            0deg,
+            #381f22 0%,
+            #381f22 4%,
+            #482a0e 10%,
+            #8e5738 17%,
+            #a98b4f 24%,
+            #00ffff00 45%
+        ),
+        linear-gradient(90deg, #5f231b 0%, #846a2d 13%, #9da375 25%, #babf9b 50%, #9da375 75%, #846a2d 88%, #5f231b 99%);
+}
+#mdtext {
+    color: #000000;
+    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.1));
+}
+#mdtext .fnref {
+    color: #34605d;
+}
+
+/* ----- Kikihia ----- */
+#shade {
+    display: grid;
+    grid-template: "title title title" "... cauta scute" minmax(0, 1fr);
+    box-sizing: border-box;
+    height: max-content;
+    min-height: fit-content;
+    gap: 21px;
+    contain: content;
+}
+#shade img {
+    margin: 3px;
+    width: 26%;
+    height: fit-content;
+    min-height: max-content;
+    object-fit: fill;
+    box-sizing: border-box;
+    white-space: nowrap;
+}
+#group1 img {
+    margin: 3px;
+    max-width: 26%;
+    height: fit-content;
+    min-height: max-content;
+    white-space: nowrap;
+    object-fit: fill;
+    box-sizing: border-box;
+}
+#group1 .colourphotos img {
+    min-width: 20%;
+    min-height: max-content;
+    display: flex;
+    flex-direction: row;
+}
+#shade .colourphotos img {
+    min-width: 30%;
+}
+#shade .distribution img {
+    min-width: 30%;
+    height: max-content;
+}
+#shade .distribution {
+    height: fit-content;
+}
+#shade .audio img {
+    min-width: 97%;
+}
+#group1 .audio img {
+    min-width: 65%;
+}
+#cauta {
+    grid-area: cauta;
+    box-sizing: border-box;
+}
+#scutellaris {
+    grid-area: scute;
+    box-sizing: border-box;
+}
+.thisisdumb {
+    grid-area: title;
+    box-sizing: border-box;
+}
+#group1 {
+    display: grid;
+    grid-template: "title title title" "dugdalei ochrina ..." minmax(0, 1fr);
+    box-sizing: border-box;
+    height: max-content;
+    min-height: fit-content;
+    gap: 11px;
+    contain: content;
+    overflow-wrap: anywhere;
+}
+/* palette;   01040
+ * #0a1d23 - 10, 29, 35
+ * #173339
+ * #34605D
+ * #5b8e79
+ * #94ba93
+ * #D9E1C6
+ * #FFFFFF
+ */

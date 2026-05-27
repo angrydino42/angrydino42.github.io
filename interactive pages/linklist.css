@@ -151,3 +151,60 @@ body {
         linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
         url(https://ento360.com/mantid/static/images/background.jpg) no-repeat center center;
 }
+#annas {
+    background-size: 100% 100%;
+    background-image: linear-gradient(0deg, #292b2c 10%, #292b2c00 10%, #292b2c00 90%, #292b2c 90%),
+        linear-gradient(90deg, #292b2c 2%, #292b2c00 2%, #292b2c00 98%, #292b2c 98%),
+        linear-gradient(90deg, #0d78c3 0%, #0d78c3 100%);
+}
+#annas:hover {
+    background-image: linear-gradient(0deg, rgb(34, 36, 37) 10%, #292b2c00 10%, #292b2c00 90%, rgb(34, 36, 37) 90%),
+        linear-gradient(90deg, rgb(34, 36, 37) 2%, #292b2c00 2%, #292b2c00 98%, rgb(34, 36, 37) 98%),
+        linear-gradient(90deg, rgb(37, 99, 235) 0%, rgb(37, 99, 235) 100%);
+}
+#football {
+    background-size: 18px 18px;
+    background-position:
+        -5px -5px,
+        0 0,
+        0 0;
+    background-image: radial-gradient(
+            75% 75% at 41% 87%,
+            #ffffffff 0%,
+            #ffffffff 3%,
+            #073aff00 3%,
+            #073aff00 22%,
+            #0000ff 22%,
+            #0000ffff 23%,
+            #0032ff00 23%,
+            #0032ff00 44%,
+            #ff0066ff 44%,
+            #ff0066 45%,
+            #0032ff00 45%
+        ),
+        radial-gradient(75% 75% at 59% 10%, #ffffffff 0%, #ffffffff 3%, #ffffff00 3%),
+        linear-gradient(90deg, #000000ff 0%, #000000ff 100%);
+}
+#football:hover {
+    background-size: 18px 18px;
+    background-position:
+        -5px -5px,
+        0 0,
+        0 0;
+    background-image: radial-gradient(
+            75% 75% at 41% 87%,
+            #ffffffff 0%,
+            #ffffffff 3%,
+            #073aff00 3%,
+            #073aff00 22%,
+            #ffff00ff 22%,
+            #0000ffff 23%,
+            #0032ff00 23%,
+            #0032ff00 44%,
+            #ff0066ff 44%,
+            #00ff00ff 45%,
+            #0032ff00 45%
+        ),
+        radial-gradient(75% 75% at 59% 10%, #ffffffff 0%, #ffffffff 3%, #ffffff00 3%),
+        linear-gradient(90deg, #000000ff 0%, #000000ff 100%);
+}
